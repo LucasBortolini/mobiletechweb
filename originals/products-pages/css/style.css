@@ -1,0 +1,51 @@
+body {
+    background-color:rgba(178, 218, 230, 0.356);
+}   
+
+p {
+    padding-bottom: 5px;
+}
+
+.card img {
+    float: left;
+    padding-right: 100px;
+}
+
+
+.text p{
+    float: left;
+    padding-right: 60%;
+    padding-top: 80px;
+}
+
+h2 {
+    padding-top: 40px;
+    padding-right: 20%;
+    font-family: Nunito, Arial, sans-serif, -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji";
+}
+h1 {
+    color: rgb(0, 51, 198);
+    font-size: 22px;
+    font-family: Nunito, Arial, sans-serif, -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji";   
+}
+button {
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-family: Nunito, Arial, sans-serif, -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji";
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 79, 190);
+    height: 3rem;
+    border: none;
+    transition: background-color 200ms;
+
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(11, 38, 88);
+}
+
