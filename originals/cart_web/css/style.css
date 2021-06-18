@@ -1,0 +1,333 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+@import url(https://fonts.googleapis.com/css2?family=Staatliches&display=swap%27);
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+  background-color: #ddd5d5;
+  font-family: 'Roboto', sans-serif;
+}
+
+.shopping-cart2{
+  width: 550px;
+  height: 423px;
+  margin-top: 140px;
+  margin-right: 100px;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  display: inline-block;
+  flex-direction: column;
+  float:right
+}
+
+.shopping-cart {
+  width: 750px;
+  height: 423px;
+  margin-top: 140px;
+  margin-left: 100px;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  /* display: inline-block; */
+  flex-direction: column;
+  float: left;
+
+}
+
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Inconsolata', monospace;
+  display: flex;
+}
+.qnt {
+  display: inline-block;
+  font-family: 'Inconsolata', monospace;
+  margin-left: 240px;
+}
+.pr {
+  font-size: 20px;
+  font-family: 'Inconsolata', monospace;
+  display: inline-block;
+  margin-top: 9px;
+  margin-left: 70px;
+}
+.title2 {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Inconsolata', monospace;
+}
+
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+
+.item:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+
+/* Buttons -  Delete and Like */
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+
+.delete-btn {
+  display: inline-block;
+  cursor: pointer;
+  width: 18px;
+  height: 17px;
+  background: url("delete-icn.svg") no-repeat center;
+  margin-right: 20px;
+}
+
+.like-btn {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  display: inline-block;
+  background: url('../twitter-heart.png');
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.is-active {
+  animation-name: animate;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+  0%   { background-position: left;  }
+  50%  { background-position: right; }
+  100% { background-position: right; }
+}
+
+/* Product Image */
+.image {
+  margin-right: 50px;
+}
+
+/* Product Description */
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+
+.description span {
+  display: block;
+  font-size: 14px;
+  color: #43484D;
+  font-weight: 400;
+}
+
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939E;
+}
+
+/* Product Quantity */
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+button:focus,
+input:focus {
+  outline:0;
+}
+
+/* Total Price */
+.total-price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .shopping-cart {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .item {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image img {
+    width: 50%;
+  }
+  .image,
+  .quantity,
+  .description {
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+  .buttons {
+    margin-right: 20px;
+  }
+}
+.total {
+  height: 60px;
+  padding: 20px 50px;
+  color: #5E6977;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Inconsolata', monospace;
+  display: inline-block;
+}
+.preco{
+  float: right;
+  padding: 25px 89px;
+  font-size: 22px;
+  font-family: 'Inconsolata', monospace;
+  color: #5E6977;
+}
+.x{
+  padding: 4px 10px;
+  margin-left: 250px;
+  font-size: 18px;
+  font-family: 'Inconsolata', monospace;
+  color: #5E6977;
+}
+.x2{
+  margin-left: 350px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-family: 'Inconsolata', monospace;
+  color: #5E6977;
+}
+
+.cep {
+  color: #5E6977;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Inconsolata', monospace;
+  margin-left: 50px;
+  display: inline-block;
+}
+
+.cepp {
+  display: inline-block;
+  margin-left: 50px;
+}
+.botao {
+  display: inline-block;
+  margin-left: 17px;
+}
+.styled {
+  border: 0;
+  line-height: 1.4;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 2px 1px #000;
+  border-radius: 20px;
+  background-color: rgba(51, 70, 215, 0.955);
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+  background-color: rgba(25, 39, 150, 0.955);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.style {
+  border: 0;
+  line-height: 2.5;
+  width: 150px;
+  margin-top: 65px;
+  margin-left: 198px;
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(51, 70, 215, 0.955);
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.style:hover {
+  background-color: rgba(25, 39, 150, 0.955);
+}
+
+.style:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.comprar {
+  
+}
