@@ -1,3 +1,4 @@
+/*Lucas*/
 .carousel-item {
   height: 65vh;
   min-height: 350px;
@@ -15,6 +16,7 @@
 
 body {
   background-color: #E1E1E1;
+  font-family: verdana, monospace;
 }
 
 header {
@@ -58,3 +60,65 @@ header {
     color:gray;
 }
 
+/*Fim*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  text-align: center;
+}
+
+form p {
+  padding: 0px 0 0 10px;
+  text-align: center;
+}
+
+div p {
+  font-size: 20px;
+  padding: 10px 0 0 10px;
+  margin: 0px 0 0 0;
+  text-align: center;
+}
+
+input {
+  margin: 5px;
+}
+
+/*A próxima linha de código serve para tirar as setas do input type number*/
+
+input[type=number]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input[type=number] {
+  appearance: textfield;
+}
+
+.content {
+  margin: 82px auto 16px;
+  border: 5px solid rgb(255, 255, 255);
+  width: 500px;
+  padding: 16px;
+  background-color: white;
+  /* border-radius: 5px; */
+}
+
+.flags {
+  display: flex;
+  justify-content: center;
+}
+
+.flags .flag {
+  padding: 2px;
+  height: 36px;
+
+}
+
+.card {
+  margin: 4px;
+}

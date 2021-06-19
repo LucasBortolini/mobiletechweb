@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tela de pagamento</title>
+
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="flags">
+      <p>Bandeiras disponíveis para o pagamento.</p>
+      <img src="imagens/cartoes.png" alt="bandeira do cartão">
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label>Nome do titular:</label>
+        <input class="form-control" type="text" required placeholder="Nome impresso no cartão">
+      </div>
+      <div class="form-group">
+        <label>Número impresso no cartão</label>
+        <input class="form-control" type="number" required placeholder="00000 0000 0000 0000">
+      </div>
+      <div class="form-group">
+        <label>Validade:</label>
+        <input class="form-control" type="text" required placeholder=" MM/AAAA">
+      </div>
+      <div class="form-group">
+        <label>CVV:</label>
+        <input class="form-control" type="text" required placeholder="3 Digitos">
+      </div>
+      <div class="form-group">
+        <label>Parcela:</label>
+        <select class="parcela"> 
+          <option> 1X </option>
+          <option> 2X </option>
+          <option> 3X </option>
+        </select><br><br>
+      </div>
+      <div class="form-group">
+        <button class="botaofin" type="submit">Finalizar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
