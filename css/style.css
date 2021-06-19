@@ -21,43 +21,49 @@ body {
 
 header {
   background: black;
+  margin-top: 66px;
 }
 
-.CL1{
-   list-style: none;
-   display: flex;
-   justify-content: space-evenly;
-   margin-top: 150px;
+.CL1 {
+ list-style: none;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 64px;
+ justify-content: space-evenly;
+ margin-top: 32px;
+ padding-top: 64px;
 }
 
-.CL2{
-   list-style: none;
-   display: flex;
-   justify-content: space-evenly;
+.CL1 li {
+  width: 300px;
 }
 
-.Link{
-   text-decoration: none;
+.Link {
+ text-decoration: none;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 
-.img{
-    width: 200px;
-    margin-bottom: 30px;
+.img {
+  width: 200px;
+  margin-bottom: 30px;
 }
 
-.name{
-    text-align: center;
-    text-decoration: none;
-    font-size: small;
-    font-family: Arial, Helvetica, sans-serif;
-    color:gray;
+.name {
+  text-align: center;
+  text-decoration: none;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  color:gray;
 }
 
-.price{
-    text-align: center;
-    font-size: small;
-    font-family: Arial, Helvetica, sans-serif;
-    color:gray;
+.price {
+  text-align: center;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  color:gray;
 }
 
 /*Fim*/
