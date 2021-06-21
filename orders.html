@@ -1,45 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Orders</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
-  </script>
-  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrinho</title>
+
+  <link rel="stylesheet" href="./css/style.css" media="screen" title="no title" charset="utf-8">
+  <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+  <meta name="robots" content="noindex,follow" />
 </head>
+
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo.png" width="auto" height="40">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Produtos
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Marcas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Carrinho</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Meus Pedidos</a>
-            </li>
-          </ul>
-        </div>
+  <div class="shopping-cart">
+    <div class="title"><b>Meus Pedidos</b>
+      <div class="Status">
+        <b>Status</b>
       </div>
-    </nav>
-  </header>
-  <!-- começar a escrever nessa linha -->
+      <div class="qnt">
+        <b style="font-size: 20px; ">Quantidade</b>
+      </div>
+      <div class="pr">
+        <b>Preço</b>
+      </div>
+    </div>
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+      <div class="image">
+        <img src="images/11pro.png" alt="" />
+      </div>
+      <div class="description">
+        <span>Iphone 11<br>Pro Max</span><span></span>
+        <span>Preto</span>
+      </div>
+      <div class="Buy">
+        <spam>Comprado</spam>
+      </div>
+      <div class="quantity">
+        <input type="text" name="name" value="1" readonly>
+      </div>
+      <div class="total-price">R$ 8.994,00</div>
+    </div>
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+      <div class="image">
+        <img src="images/g10motorola.png" alt="" />
+      </div>
+      <div class="description">
+        <span>Motorola Moto </span>
+        <span>G10 64GB</span>
+        <span>Preto</span>
+      </div>
+      <div class="Buy">Comprado</div>
+      <div class="quantity">
+        <input type="text" name="name" value="1" readonly>
+      </div>
+      <div class="total-price">R$ 1.954,00</div>
+    </div>
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+      <div class="image">
+        <img src="images/note9.png" alt="" />
+      </div>
+      <div class="description">
+        <span>Xiaomí Redimi </span>
+        <span>Note 9 128GB</span>
+        <span>Polar White</span>
+      </div>
+      <div class="Buy">Comprado</div>
+      <div class="quantity">
+        <input type="text" name="name" value="1" readonly>
+      </div>
+      <div class="total-price">R$ 1.549,00</div>
+    </div>
 </body>
+
 </html>
