@@ -153,3 +153,175 @@ input[type=number] {
 .text-uppercase {
   color: #FFF;
 }
+
+/* A Partir desse  ponto, Começa a estilizalção da tela Meus Pedidos */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);             
+@import url(https://fonts.googleapis.com/css2?family=Staatliches&display=swap%27);
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+  background-color: #ddd5d5;
+  font-family: 'Roboto', sans-serif;
+}
+
+.shopping-cart {
+  width: 770px;
+  height: 470px;
+  margin-top: 70px;
+  margin-left: 20%;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 15px;
+  /* display: inline-block; */
+  flex-direction:column;
+  float: left;
+
+}
+
+.title {
+  height: 70px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 18px;
+  font-size: 20px;
+  font-style: oblique;
+  font-family: 'Inconsolata', monospace;
+  display: inline-flex;
+}
+
+.Status{
+  display: inline-flex;
+  margin-top: 15px;
+  margin-left: 220px;
+  font-family:'Inconsolata', monospace;
+  font-size: 20px;
+}
+
+.Buy{
+  margin-top: 20px;
+  margin-left: 30px;
+  
+}
+
+.qnt {
+  display: inline-flex;
+  margin-top: 15px;
+  margin-left: 70px;
+  font-family:'Inconsolata', monospace;
+  font-size: 20px;
+}
+
+.pr {
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 90px;
+  font-family:'Inconsolata', monospace;
+  font-size: 20px;
+}
+
+
+.title2 {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Inconsolata', monospace;
+}
+
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+
+.item:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+
+/* Buttons -  Delete and Like */
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+
+.delete-btn {
+  display: inline-block;
+  cursor: pointer;
+  width: 18px;
+  height: 17px;
+  background: url("delete-icn.svg") no-repeat center;
+  margin-right: 20px;
+}
+
+.like-btn {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  display: inline-block;
+  background: url('../twitter-heart.png');
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* Product Image */
+.image {
+  margin-right: 55px;
+}
+
+/* Product Description */
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+
+.description span {
+  display: block;
+  font-size: 14px;
+  color: #43484D;
+  font-weight: 400;
+}
+
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;  
+  color: #86939E;
+}
+
+.quantity {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.quantity input {
+  border:none;
+  text-align: center;
+  width: 15px;
+  margin-left: 100px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+.total-price {
+ margin-left: 120px;
+ margin-top: 20px;
+ color: #303036;
+}
+
