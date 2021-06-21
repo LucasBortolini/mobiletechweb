@@ -84,13 +84,6 @@ form p {
   text-align: center;
 }
 
-div p {
-  font-size: 20px;
-  padding: 10px 0 0 10px;
-  margin: 0px 0 0 0;
-  text-align: center;
-}
-
 input {
   margin: 5px;
 }
@@ -111,7 +104,11 @@ input[type=number] {
   width: 500px;
   padding: 16px;
   background-color: white;
-  /* border-radius: 5px; */
+  border-radius: 8px; 
+}
+
+.payment-method h1 {
+  font-size: 18px;
 }
 
 .flags {
@@ -125,6 +122,34 @@ input[type=number] {
 
 }
 
+.contact {
+  color: #FFF;
+  list-style: none;
+}
+
 .card {
   margin: 4px;
+}
+
+.page-footer {
+  background: background: rgb(2,15,33);
+  background: linear-gradient(90deg, rgba(6,34,74,1) 55%, rgba(11, 51, 96, 1) 100%);
+}
+
+.page-footer p {
+  color: rgba(255,255,255,.5)
+}
+
+.footer-copyright {
+  color: rgba(255,255,255,.5);
+  background: background: rgb(2,15,33);
+  background: linear-gradient(90deg, rgba(2,15,33,1) 55%, rgba(49,133,252,1) 100%);
+}
+
+.footer-copyright a {
+  color: #FFF;
+}
+
+.text-uppercase {
+  color: #FFF;
 }
