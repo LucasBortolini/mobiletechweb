@@ -6,10 +6,11 @@ f<!DOCTYPE html>
   
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/pagamento.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
   </script>
   <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  
+    
 </head>
 <body>
   <header>
@@ -72,11 +73,22 @@ f<!DOCTYPE html>
           <option> 2X </option>
           <option> 3X </option>
         </select><br><br>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary mb-2">Finalizar</button>
-      </div>
-    </form>
-  </div>
+
+        <div class="modalll">
+
+          <input type="button" class="Botaomodal" onclick="abrirmodal()"
+          value="Confirmar" />
+    
+          <div class="bgmd" id="aghj">
+            
+          <div class="aghj"></div>
+
+              <input type="button" class="close" onclick="fecharmodal()">&times;
+        </div>
+        </form>
+      <script src="./js/index.js"></script>
+    </div>         
+  
+ 
 </body>
 </html>
