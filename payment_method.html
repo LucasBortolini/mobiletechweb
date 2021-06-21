@@ -1,0 +1,82 @@
+f<!DOCTYPE html>
+<html>
+<head>
+  <title>Forma de Pagamento</title>
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
+  </script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="imagens/logo.png" width="auto" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Produtos
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Marcas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Carrinho</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Meus Pedidos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+   <div class="content payment-method">
+    <h1>Escolha um dos métodos abaixo para pagamento:</h1>
+    <div class="flags">
+      <a onclick="$('#card').focus()" class="card"><img class="flag" src="imagens/cartoes.png" alt="bandeira do cartão"></a>
+      <a href="imagens/boleto.png" target="_blank" class="card" download><img class="flag" src="imagens/code_bar.png" alt="bandeira do cartão"></a>
+    </div>
+    <form>
+      <div class="form-group">
+        <label>Número impresso no cartão</label>
+        <input class="form-control" id="card" type="number" required placeholder="0000 0000 0000 0000">
+      </div>
+      <div class="form-group">
+        <label>Nome do titular:</label>
+        <input class="form-control" type="text" required placeholder="Nome impresso no cartão">
+      </div>
+      <div class="form-group">
+        <label>Validade:</label>
+        <input class="form-control" type="text" required placeholder=" MM/AAAA">
+      </div>
+      <div class="form-group">
+        <label>CVV:</label>
+        <input class="form-control" type="text" required placeholder="3 Digitos">
+      </div>
+      <div class="form-group">
+        <label>Parcelamento:</label>
+        <select class="form-control parcela"> 
+          <option> 1X </option>
+          <option> 2X </option>
+          <option> 3X </option>
+        </select><br><br>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary mb-2">Finalizar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
