@@ -153,3 +153,69 @@ input[type=number] {
 .text-uppercase {
   color: #FFF;
 }
+
+/* produtos */
+
+.product-card {
+  padding-top: 64px;
+  min-height: 340px;
+}
+
+
+.product-card img {
+  float: left;
+  padding-right: 100px;
+}
+
+.product-title {
+  font-family: Nunito, Arial, sans-serif, -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji";
+  font-size: 32px;
+  text-align: justify;
+}
+
+.price-wrapper {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+.price-wrapper p {
+  margin-bottom: 4px;
+  text-align: right;
+}
+
+.price-wrapper .price {
+  color: rgb(0, 51, 198);
+  font-size: 22px;
+  font-family: Nunito, Arial, sans-serif, -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji";   
+}
+
+.product-btn {
+  margin-top: 16px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-family: Nunito, Arial, sans-serif, -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji";
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(19, 79, 190);
+  height: 3rem;
+  border: none;
+  transition: background-color 200ms;
+  align-self: center;
+}
+
+.product-btn:hover {
+  cursor: pointer;
+  background-color: rgb(11, 38, 88);
+}
+
+.text {
+  padding: 32px 64px;
+  text-align: justify;
+}
+
