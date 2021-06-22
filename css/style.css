@@ -208,11 +208,14 @@ input[type=number] {
   border: none;
   transition: background-color 200ms;
   align-self: center;
+  display: flex;
 }
 
 .product-btn:hover {
   cursor: pointer;
   background-color: rgb(11, 38, 88);
+  text-decoration: none;
+  color: white;
 }
 
 .text {
