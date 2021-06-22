@@ -165,6 +165,7 @@ input[type=number] {
 .product-card img {
   float: left;
   padding-right: 100px;
+  max-width: 50%;
 }
 
 .product-title {
