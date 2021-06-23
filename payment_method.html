@@ -72,7 +72,7 @@ f<!DOCTYPE html>
         </select><br><br>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary mb-2">Finalizar</button>
+        <button type="submit" onclick="abrirModal()" class="btn btn-primary mb-2">Finalizar</button>
       </div>
     </form>
   </div>
@@ -145,5 +145,15 @@ f<!DOCTYPE html>
 
   </footer>
   <!-- Footer -->
+
+  <!-- Modal -->
+  <div class="modal">
+    <div onclick="fecharModal()" class="fechar">X</div>
+    <img src="images/order-completed.png" class="modal-img">
+    <h1 class="modal-h1">Parabéns por sua compra!</h1>
+    <p>Clique abaixo para acompanhar o status do seu pedido</p>
+    <a class="btn btn-primary mb-2" href="orders.html">Meus Pedidos</a>
+  </div>
+  <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
