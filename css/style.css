@@ -55,14 +55,12 @@ header {
   text-align: center;
   text-decoration: none;
   font-size: small;
-  font-family: Arial, Helvetica, sans-serif;
   color:gray;
 }
 
 .price {
   text-align: center;
   font-size: small;
-  font-family: Arial, Helvetica, sans-serif;
   color:gray;
 }
 
@@ -170,7 +168,6 @@ input[type=number] {
 }
 
 .product-title {
-  font-family: Nunito, Arial, sans-serif, -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji";
   font-size: 32px;
   text-align: justify;
 }
@@ -191,7 +188,6 @@ input[type=number] {
 .price-wrapper .price {
   color: rgb(0, 51, 198);
   font-size: 32px;
-  font-family: Nunito, Arial, sans-serif, -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji";
   font-weight: bold;
 }
 
@@ -200,7 +196,6 @@ input[type=number] {
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  font-family: Nunito, Arial, sans-serif, -apple-system, BlinkMacSystemFont, Helvetica, "Apple Color Emoji";
   padding-left: 24px;
   padding-right: 24px;
   font-size: 1rem;
@@ -260,7 +255,6 @@ input[type=number] {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Georgia', sans-serif;
 }
 
 .modal-h1 {
@@ -323,7 +317,6 @@ input[type=number] {
   padding: 20px 30px;
   font-size: 30px;
   font-weight: 400;
-  font-family: 'Inconsolata', monospace;
 }
 
 .item {
@@ -364,13 +357,29 @@ input[type=number] {
   top: 9px;
   left: 15px;
   display: inline-block;
-  background: url('../images/twitter-heart.png');
+  background: url('../images/carrinho.png');
   width: 60px;
   height: 60px;
-  background-size: 2900%;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   cursor: pointer;
 }
+
+.check-orders {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  display: inline-block;
+  background: url('../images/check.jpg');
+  width: 36px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
 
 .is-active {
   animation-name: animate;
@@ -392,7 +401,7 @@ input[type=number] {
 }
 
 .image img {
-  width: 80px;
+  width: 115px;
 }
 
 /* Product Description */
@@ -435,7 +444,7 @@ input[type=number] {
   margin: 0;
 }
 
-button[class*=btn] {
+.plus-btn, .minus-btn {
   width: 30px;
   height: 30px;
   background-color: #E1E8EE;
@@ -443,12 +452,7 @@ button[class*=btn] {
   border: none;
   cursor: pointer;
 }
-.minus-btn img {
-  margin-bottom: 3px;
-}
-.plus-btn img {
-  margin-top: 2px;
-}
+
 button:focus,
 input:focus {
   outline:0;
@@ -500,28 +504,24 @@ input:focus {
   color: #5E6977;
   font-size: 20px;
   font-weight: 400;
-  font-family: 'Inconsolata', monospace;
   display: inline-block;
 }
 .preco{
   float: right;
-  padding: 25px 89px;
+  padding: 18px 69px;
   font-size: 22px;
-  font-family: 'Inconsolata', monospace;
   color: #5E6977;
 }
 .x{
   padding: 4px 10px;
   margin-left: 250px;
   font-size: 18px;
-  font-family: 'Inconsolata', monospace;
   color: #5E6977;
 }
 .x2{
   margin-left: 350px;
   margin-bottom: 30px;
   font-size: 18px;
-  font-family: 'Inconsolata', monospace;
   color: #5E6977;
 }
 
@@ -529,7 +529,6 @@ input:focus {
   color: #5E6977;
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Inconsolata', monospace;
   padding: 0 16px;
   display: flex;
   align-items: center;
