@@ -8,10 +8,7 @@ function fecharModal() {
   modal.style.visibility = 'hidden';
 }
 
-  console.log($('.minus-btn'))
-
 $('.minus-btn').on('click', function (e) {
-  console.log('oi')
   e.preventDefault();
   var $this = $(this);
   var $input = $this.closest('div').find('input');
